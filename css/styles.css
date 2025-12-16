@@ -165,4 +165,80 @@ a {
     color: var(--bg-color);
 }
 
+/* ABOUT SECTION */
 
+.about-section {
+    padding: 100px 40px;
+}
+
+.about-flex-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.section-title-left {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+
+.about-cta-link {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+}
+
+.about-cta-link .icon-arrow {
+    margin-left: 8px;
+}
+
+.about-profile-image {
+    border-radius: 16px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 40px rgba(255, 129, 72, 0.6);
+    object-fit: cover;
+    height: 320px;
+}
+
+.about-image-area {
+    flex-basis: 40%;
+}
+
+.about-text-content {
+    flex-basis: 60%;
+}
+
+
+/* Media Queries */
+
+/* Tablet Media Query */
+@media (max-width: 768px) {
+
+    .about-flex-container {
+        flex-direction: column;
+    }
+
+    .about-image-area, .about-text-content {
+        width: 100%;
+    }
+
+} /* closes the tablet media query */
+
+/* Mobile Media Query */
+@media (max-width: 368px) {
+
+    .headline {
+        font-size: 2.4rem;
+    }
+    .section-title-left {
+        font-size: 2rem;
+    }
+}
