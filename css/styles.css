@@ -215,12 +215,188 @@ a {
 .about-text-content {
     flex-basis: 60%;
 }
+/*services section */
+
+.services-section {
+    padding: 100px 40px;
+}
+
+.service-card {
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(87, 61, 84, 0.4);
+    box-shadow: 0 0px 15px rgba(87, 61, 84, 0.4);
+    background-color:rgba(87, 61, 84, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(87, 61, 84, 0.3);
+}
+ .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;  
+    max-width: 1200px;
+ }
+
+ .service-icon {
+    font-size: 40px;
+    margin: 0 auto 16px;
+    color: var(--primary-color);
+}
+
+.service-title {
+    font-family: var(--font-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service-description {
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* projects section */
+.projects-section {
+    padding: 80px 40px;
+}
+
+.project-card {
+    padding: 30px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(22, 20, 26, 0.4);
+    border: 1px solid var(--highlight-color);
+    box-shadow: 0 8px 30px -10px rgba(87, 61, 84, 0.3);
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 40px -10px rgba(87, 61, 84, 0.6);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.project-tag {
+    border: 1px solid rgba(224, 73, 113, 0.4);
+    border-color: rgba(224, 73, 113, 0.2);
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.project-link {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.project-link:hover {
+    color: var(--secondary-color);
+    
+}
+/* Footer Styles */
+
+.footer {
+    padding: 60px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(87, 61, 84, 0.4);
+}
+
+.footer-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.social-icon {
+    font-size: 28px;
+
+}
+
+.social-icon-link {
+    color: var(--secondary-color);
+    transition: opacity 0.3s, color 0.2s;
+
+}
+
+.social-icon-link:hover {
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.footer-contact-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    transition: color 0.2s, border-color 0.2s;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.footer-contact-link:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.copyright-text {
+    font-size: 0.75rem;
+    color: var(--text-color);
+    opacity: 0.6;
+}
 
 
 /* Media Queries */
 
 /* Tablet Media Query */
 @media (max-width: 768px) {
+
+    .header-bar {
+        flex-direction: column;
+
+    }
 
     .about-flex-container {
         flex-direction: column;
@@ -229,11 +405,24 @@ a {
     .about-image-area, .about-text-content {
         width: 100%;
     }
+    .section-title {
+        font-size: 2rem;
+    }
 
 } /* closes the tablet media query */
 
 /* Mobile Media Query */
 @media (max-width: 368px) {
+
+    body {
+        padding-top: 0px;
+    }
+
+    .main-navigation {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
 
     .headline {
         font-size: 2.4rem;
@@ -241,4 +430,14 @@ a {
     .section-title-left {
         font-size: 2rem;
     }
+
+    .service-grid, .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
 }
+
+
