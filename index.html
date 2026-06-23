@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <canvas id="webgl-canvas"></canvas>
   <header class="page-header">
     <div class="header-bar container">
         <div class="logo">Fatima Codes</div>
@@ -30,12 +31,12 @@
 
     <section class="hero-section">
         <div class="intro-content">
-           <h1 class="headline">Designing worlds of digital grace</h1>
-           <p class="hero-subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio at cupiditate neque sint! Accusamus ipsam exercitationem nemo animi. Non, consequatur illo? Debitis tenetur mollitia quidem.</p>
-              <a href="#" class="cta-button">
-                View My Work
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
+           <h1 class="headline">Crafting Digital Landscapes</h1>
+           <p class="hero-subtext">"I specialize in designing harmonious digital experiences that resonate. By prioritizing clarity, empathy, and subtle beauty, I build thoughtful platforms that bridge the gap between human intuition and sophisticated technology."</p>
+           <a href="#projects" class="cta-button">
+             View My Work
+             <i class="fa-solid fa-arrow-right"></i>
+           </a>
         </div>
     </section>
 
@@ -43,14 +44,14 @@
       <div class="container">
         <div class="about-flex-container">
           <div class="about-image-area">
-            <img src="images/laptop-about.png" 
-            class="about-profile-image">
+            <div class="about-image-wrapper tilt-element">
+              <img src="images/profile-circle.jpg" class="about-profile-image" alt="Fatima Profile">
+            </div>
           </div><!--closes about image area-->
           <div class="about-text-content">
             <h2 class="section-title-left">A Deep Dive into my Phylosophy</h2>
-            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit reprehenderit voluptas veritatis officia dignissimos? Placeat maxime numquam dicta deleniti magnam itaque voluptatem ipsum, nesciunt laboriosam.</p> 
-            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit reprehenderit voluptas veritatis officia dignissimos? Placeat maxime numquam dicta deleniti magnam itaque voluptatem ipsum, nesciunt laboriosam.</p>
-            <a href="#" class="about-cta-link">Contact me <i class="fa-solid fa-arrow-right icon-arrow"></i></a>
+            <p class="about-text">I’m Fatima, a web developer with a creative mind and a passion for crafting unique digital experiences. I love blending technical logic with clean, modern design. For me, coding isn't just about making things work; it's about building responsive, secure, and memorable interfaces that genuinely connect with users. I thrive on turning complex problem-solving into seamless user journeys.</p>
+            <a href="mailto:steffmts@gmail.com" class="about-cta-link">Contact me <i class="fa-solid fa-arrow-right icon-arrow"></i></a>
           
             </div> <!--closes about text content-->
         </div> <!--closes flex container-->
@@ -58,33 +59,34 @@
     </section> <!--closes about section-->
     <section id="services" class="services-section">
       <div class="container">
-        <h2 class="section-title">Certifications</h2>
+        <h2 class="section-title">Certifications and Skills</h2>
         <div class="service-grid">
 
-          <div class="service-card"> 
+          <div class="service-card tilt-element"> 
             <i class="fa-solid fa-camera service-icon"></i>
-            <h3 class="service-title">Web Development</h3>
-            <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+            <h3 class="service-title">Design</h3>
+            <p class="service-description">Figma, Photoshop, Google UX Design.</p>
           </div>
-            <div class="service-card"> 
-              <i class="fa-solid fa-code service-icon"></i>
+          <div class="service-card tilt-element"> 
+            <i class="fa-solid fa-code service-icon"></i>
             <h3 class="service-title">Web Development</h3>
-            <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+            <p class="service-description">HTML, CSS, JavaScript, React, Node.js, GitHub.</p>
           </div>
-          <div class="service-card"> 
-            <i class="fa-solid fa-palette service-icon"></i>
-            <h3 class="service-title">Web Development</h3>
-            <p class="service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-            </div>
+          <div class="service-card tilt-element"> 
+            <i class="fa-solid fa-robot service-icon"></i>
+            <h3 class="service-title">AI</h3>
+            <p class="service-description">Google AI, Knowledge Pillars AI Business Implementation Practitioner.</p>
+          </div>
             </div>
 
 
         </div> <!--closes services grid-->
 
       </div> <!--closes container-->
-
+     
+      <!--hidden project section 
     </section>
-    <!--closes services section-->
+    
     <section id="projects" class="projects-section">
       <div class="container">
         <h2 class="section-title">My Projects <Title></Title></h2>
@@ -93,43 +95,41 @@
         </p>
 
         <div class="project-grid">
-          <div class="project-card">
+          <div class="project-card tilt-element">
             <h3 class="project-title">My Work </h3>
             <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
             <div class="tag-container">
               <span class="project-tag">Data viz</span>
               <span class="project-tag">React</span>
               <span class="project-tag">D3.js</span>
-            </div> <!--closes tag container-->
-<a href="#" class="project-link">View Project</a>
-          </div> <!--closes project card-->
+            </div> 
+            <a href="#" class="project-link">View Project</a>
+          </div> 
 
-        
-          <div class="project-card">
+          <div class="project-card tilt-element">
             <h3 class="project-title">My Work</h3>
             <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
             <div class="tag-container">
               <span class="project-tag">UI/UX</span>
               <span class="project-tag">Branding</span>
               <span class="project-tag">e-commerce</span>
-            </div> <!--closes tag container-->
-<a href="#" class="project-link">View Project</a>
-          </div> <!--closes project card-->
+            </div>
+            <a href="#" class="project-link">View Project</a>
+          </div> 
 
-        
-          <div class="project-card">
+          <div class="project-card tilt-element">
             <h3 class="project-title">My Work</h3>
             <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
             <div class="tag-container">
               <span class="project-tag">Branding</span>
               <span class="project-tag">Figma</span>
               <span class="project-tag">Design System</span>
-            </div> <!--closes tag container-->
-<a href="#" class="project-link">View Project</a>
-          </div> <!--closes project card-->
-</div> <!--closes projects grid-->
+            </div> 
+            <a href="#" class="project-link">View Project</a>
+          </div>
+        </div> 
 
-      </div><!--closes section container-->
+      </div>closes project section hidden for now-->
     </section>
     <footer class="footer">
       <div class="container footer-content">
@@ -137,7 +137,7 @@
         <p class="footer-text">Ready to launch your project? Lets connect</p>
 
         <div class="social-links">
-          <a href="#" class="social-icon-link">
+          <a href="https://www.linkedin.com/in/fatima-montes/" class="social-icon-link">
             <i class="fa-brands fa-linkedin social-icon"></i>
           </a>
           <a href="#" class="social-icon-link">
@@ -146,12 +146,16 @@
         </div>
     
       <a href="mailto:steffmts@gmail.com" class="footer-contact-link">Start the conversation</a>
-      <p class="copyright-text">&copy; 2025 My Portofolio Design with cosmic grace</p>
+      <p class="copyright-text">&copy; 2026 Fatima Codes Digital Portfolio.</p>
       </div> 
     </footer>
 
 
 
   </main>
+  <!-- Three.js library for 3D interactions -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Interactive portfolio scripting -->
+  <script src="js/main.js"></script>
 </body>
 </html>
